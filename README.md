@@ -14,3 +14,5 @@
 3. Дизайн:
     * Создать прототип интерфейса приложения, учитывая UX/UI принципам.
     * Использование современного, минималистичного дизайна.
+
+Figma: https://www.figma.com/design/LwvetbsTCdvC1EaA6MfVjj/Untitled?node-id=0-1&t=7mewdKFG1Ytvb1ia-1
