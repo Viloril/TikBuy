@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TikBuy</string>
+    <string name="addButton">+ Добавить товар</string>
+    <string name="tikbuy">TikBuy - список покупок</string>
+</resources>

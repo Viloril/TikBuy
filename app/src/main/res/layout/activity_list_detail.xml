@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#2E7D32"
+        android:padding="16dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="←"
+                android:textSize="26sp"
+                android:textColor="#FFFFFF"
+                android:background="@android:color/transparent"
+                android:padding="4dp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:onClick="goBack"
+                android:elevation="0dp"/>
+
+            <TextView
+                android:id="@+id/list_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Название списка"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/list_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Товары в списке"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="12dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:paddingBottom="16dp">
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Добавить"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/delete_list_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Удалить список"
+            android:backgroundTint="#C62828"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+</LinearLayout>
